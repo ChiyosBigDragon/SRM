@@ -8,7 +8,7 @@ public:
 		int w;
 	};
 	vector<Node> g;
-	// dp[i] := iに置くときの最大値
+	// dp[i] := iに置くときのスコアの最小値
 	vector<int> dp;
 	int dfs(int from) {
 		if(dp[from] != -1) return dp[from];
