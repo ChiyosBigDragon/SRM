@@ -24,8 +24,8 @@ public:
 							int ny = y + dy;
 							for(int dx = 0; dx < k; ++dx) {
 								int nx = x + dx;
-								find |= (board[ny][nx] != 'T');
-								board[ny][nx] = 'T';
+								find |= (board[ny][nx] != 'D');
+								board[ny][nx] = 'D';
 							}
 						}
 					}
@@ -34,7 +34,7 @@ public:
 			if(not find) {
 				for(int y = 0; y < n; ++y) {
 					for(int x = 0; x < n; ++x) {
-						if(board[y][x] != 'T') {
+						if(board[y][x] != 'D') {
 							return "Impossible";
 						}
 					}
